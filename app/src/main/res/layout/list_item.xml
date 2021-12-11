@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:background="@color/tan_background">
+
+    <ImageView
+        android:id="@+id/image"
+        style="@style/PictureStyle"
+        android:contentDescription="@string/image_description"
+        tools:src="@mipmap/ic_launcher"
+        tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/image"
+        android:orientation="vertical"
+        tools:background="@color/category_numbers"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/miwok_text_view"
+            style="@style/TextViewStyleList"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck"
+            tools:text="lutti"
+            android:gravity="bottom" />
+
+        <TextView
+            android:id="@+id/default_text_view"
+            style="@style/TextViewStyleList"
+            tools:ignore="TextContrastCheck"
+            tools:text="one"
+            android:gravity="top" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:src="@mipmap/baseline_play_arrow_white_24"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/play_arrow" />
+
+</RelativeLayout>

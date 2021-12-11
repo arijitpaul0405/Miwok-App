@@ -26,8 +26,26 @@
         <item name="android:layout_height">@dimen/list_item_height</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:padding">16dp</item>
+        <item name="android:background">?android:selectableItemBackground</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
     </style>
+
+    <!-- Style for the pictures shown in list -->
+    <style name="PictureStyle">
+        <item name="android:layout_width">@dimen/list_item_height</item>
+        <item name="android:layout_height">@dimen/list_item_height</item>
+    </style>
+
+    <!-- Style for the TextView shown in list -->
+    <style name="TextViewStyleList">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
 </resources>
